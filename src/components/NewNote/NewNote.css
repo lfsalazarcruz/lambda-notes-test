@@ -49,3 +49,30 @@
 .newnote-container button:hover {
     background-color: rgb(3, 142, 145);
 }
+
+@media (max-width: 400px) {
+    .newnote-container {
+        margin: 0;
+        padding-top: 100px;
+        overflow-y: auto;
+    }
+
+    .newnote-container .newnote-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .newnote-container .newnote-form input {
+        margin: 0 0 15px;
+    }
+
+    .newnote-container .newnote-form .note-title-input {
+        width: 95%;
+    }
+
+    .newnote-container button {
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+}

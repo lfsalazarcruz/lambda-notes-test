@@ -45,3 +45,40 @@
 .sidemenu-container .nav-bar .nav-container li .active-component {
   color: rgb(1, 48, 49);
 }
+
+@media (max-width: 400px) {
+  .App .sidemenu-container {
+    position: center;
+  }
+
+  .App .sidemenu-container ul{
+    padding: 0 10px;
+    height: auto;
+    width: 100%;
+    opacity: 0.95;
+  }
+
+  .App .sidemenu-container .menu-title {
+    margin: 15px 0;
+    width: 380px;
+    text-align: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+
+  .App .sidemenu-container .nav-bar .nav-container .links-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .App .sidemenu-container .nav-bar .nav-container li {
+    margin: 0 0 15px;
+    padding: 10px 0;
+    width: 180px;
+    border-radius: 10px;
+  }
+
+  .App .sidemenu-container .nav-bar .nav-container li .nav-text {
+    padding: 10px 0;
+  }
+}

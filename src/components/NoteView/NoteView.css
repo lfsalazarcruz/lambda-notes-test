@@ -1,6 +1,51 @@
+.note-view-container {
+    background: #E7E6E7;
+    height: 100vh;
+    margin-left: 226px;
+    overflow-y: auto;
+}
 
-.link {
+.note-view-container .links-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 40px;
+}
+
+.note-view-container .links-container .link {
     margin: 2px 20px;
     font-weight: bold;
     color: black;
+}
+
+.note-view-container .body-container h2 {
+    text-align: start;
+    margin: 0 20px;  
+}
+
+.note-view-container .body-container p {
+    text-align: justify;
+    margin: 20px;; 
+}
+
+@media (max-width: 400px){
+    .note-view-container {
+        margin: 0;
+        padding-top: 125px;
+    }
+
+    .note-view-container .links-container {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        align-items: center;
+    }
+
+    .note-view-container .links-container .link {
+        margin: 2px 20px;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+
 }

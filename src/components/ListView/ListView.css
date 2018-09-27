@@ -54,3 +54,16 @@
     font-size: 12px;
 }
 
+@media (max-width: 400px) {
+    .list-container {
+        margin: 0;
+        padding-top: 100px;
+        width: 400px;
+    }
+
+    .list-container .notes-top-container .notes-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+

@@ -3,33 +3,6 @@ import './NoteView.css';
 import { Link } from "react-router-dom";
 import DeleteModal from '../DeleteNote/DeleteNote';
 
-import styled from  'styled-components';
-
-//============ STYLED COMPONENTS =======================
-
-const NoteViewContainer = styled.div`
-    background: #E7E6E7;
-    height: 100vh;
-    margin-left: 226px;
-    overflow-y: auto;
-`;
-
-const LinksContainer = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 40px;
-`;
-
-const Title = styled.h2`
-    text-align: start;
-    margin: 0 20px;
-`;
-
-const Text = styled.p`
-    text-align: justify;
-    margin: 20px;; 
-`;
-
 class NoteView extends React.Component {
     constructor(props) {
         super(props);
@@ -49,16 +22,16 @@ class NoteView extends React.Component {
     
      render() {
         return (
-            <NoteViewContainer>
-                <LinksContainer>
+            <div className="note-view-container">
+                <div className="links-container">
                     <Link to={`/note-view/edit/${this.state.note.id}`} className="link">edit</Link>
                     <DeleteModal {...this.props} note={this.state.note} deleteNote={this.props.deleteNote}>delete</DeleteModal>
-                </LinksContainer>
-                <div className="body-container">
-                    <Title>{this.state.note.title}</Title>
-                    <Text>{this.state.note.textBody}</Text>
                 </div>
-            </NoteViewContainer>
+                <div className="body-container">
+                    <h2>{this.state.note.title}</h2>
+                    <p>{this.state.note.textBody}</p>
+                </div>
+            </div>
         );
     }
 };
