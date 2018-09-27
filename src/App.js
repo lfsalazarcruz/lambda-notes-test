@@ -32,7 +32,7 @@ class App extends Component {
 	}
 
 	deleteNote = id => {
-		const endpoint = `https://mynotespal.herokuapp.com/api/notes/${noteID}`;
+		const endpoint = `https://mynotespal.herokuapp.com/api/notes/${id}`;
 		axios
 			.delete(endpoint)
 			.then(res => {
