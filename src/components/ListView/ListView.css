@@ -54,11 +54,12 @@
     font-size: 12px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .list-container {
         margin: 0;
         padding-top: 100px;
-        width: 400px;
+        border: 1px solid blue;
+        width: 100%;
     }
 
     .list-container .notes-top-container .notes-container {

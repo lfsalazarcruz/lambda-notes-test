@@ -27,7 +27,7 @@
     margin: 20px;; 
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     .note-view-container {
         margin: 0;
         padding-top: 125px;

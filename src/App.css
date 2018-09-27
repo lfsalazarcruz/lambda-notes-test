@@ -46,7 +46,7 @@
   color: rgb(1, 48, 49);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .App .sidemenu-container {
     position: center;
   }
@@ -56,14 +56,14 @@
     height: auto;
     width: 100%;
     opacity: 0.95;
+    display: flex;
+    justify-content: center;
   }
 
   .App .sidemenu-container .menu-title {
     margin: 15px 0;
-    width: 380px;
+    width: 355px;
     text-align: center;
-    /* display: flex;
-    flex-wrap: wrap; */
   }
 
   .App .sidemenu-container .nav-bar .nav-container .links-container {
@@ -72,7 +72,7 @@
   }
 
   .App .sidemenu-container .nav-bar .nav-container li {
-    margin: 0 0 15px;
+    margin: 0 5px 15px;
     padding: 10px 0;
     width: 180px;
     border-radius: 10px;
