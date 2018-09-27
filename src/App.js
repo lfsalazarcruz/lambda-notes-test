@@ -20,7 +20,7 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		const endpoint = 'https://mynotespal.herokuapp.com/api/notes';
+		const endpoint = process.env.REACT_APP_API;
 		axios
 		.get(endpoint)
 		.then(response => {
@@ -32,7 +32,7 @@ class App extends Component {
 	}
 
 	deleteNote = id => {
-		const endpoint = `https://mynotespal.herokuapp.com/api/notes/${id}`;
+		const endpoint = process.env.REACT_APP_API_ID;
 		axios
 			.delete(endpoint)
 			.then(res => {
@@ -47,8 +47,9 @@ class App extends Component {
 	editNote = (event, noteID ,title, textBody) => {
 		event.preventDefault();
 		 const editedNote = { title, textBody };
+		 const endpoint = process.env.REACT_APP_API_ID;
 		 axios
-		  .put(`https://mynotespal.herokuapp.com/api/notes/${noteID}`, editedNote)
+		  .put(endpoint, editedNote)
 		  .then(res => {
 			const editedNote = res.data;
 			const notes = this.state.notes.slice();

@@ -43,9 +43,9 @@ class NewNote extends Component {
 
 	addNote = event => {
 		event.preventDefault();
-
+		const endpoint = process.env.REACT_APP_API;
 		axios
-		.post('https://mynotespal.herokuapp.com/api/notes', this.state)
+		.post(endpoint, this.state)
 		.then(res => {
 			console.log('Axios response', res);
 			this.props.history.push('/');
