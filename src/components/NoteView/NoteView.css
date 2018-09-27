@@ -47,5 +47,10 @@
         font-size: 20px;
         color: black;
     }
+}
 
+@media (max-width: 375px) {
+    .note-view-container {
+        padding-top: 175px;
+    }
 }

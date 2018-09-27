@@ -82,3 +82,16 @@
     padding: 10px 0;
   }
 }
+
+@media (max-width: 375px) {
+  .App .sidemenu-container .nav-bar .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 30px;
+  }
+
+  .App .sidemenu-container .nav-bar .nav-container li {
+    width: 100%;
+  }
+}

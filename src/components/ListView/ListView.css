@@ -58,13 +58,18 @@
     .list-container {
         margin: 0;
         padding-top: 100px;
-        border: 1px solid blue;
         width: 100%;
     }
 
     .list-container .notes-top-container .notes-container {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .list-container {
+        padding-top: 150px;
     }
 }
 
